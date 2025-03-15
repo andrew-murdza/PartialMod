@@ -5,20 +5,334 @@
     "settings": "aoemod:aoedim",
     "biome_source": {
       "type": "minecraft:multi_noise",
-      "biomes": [
+      "biomes":
+      [
         {
           "biome": "aoemod:rainforestnew",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
-            "continentalness": 0,
+            "continentalness": [
+              -1,
+              -0.38
+            ],
             "erosion": 0,
             "weirdness": 0,
-            "depth": 0,
+            "depth": [
+              -1,
+              1
+            ],
             "offset": 0
           }
+        },
+        {
+          "biome": "aoemod:savanna",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              -0.38,
+              -0.1
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [
+              -1,
+              1
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "aoemod:plains",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              -0.1,
+              0.1
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [
+              -1,
+              1
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "aoemod:snowy_taiga",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              0.1,
+              0.38
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [
+              -1,
+              1
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "aoemod:desert",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              0.38,
+              1
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [
+              -1,
+              0.32
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "aoemod:crimson_forest",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              0.38,
+              1
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [
+              0.24,
+              0.32
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "aoemod:warped_forest",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              0.38,
+              1
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [
+              0.16,
+              0.24
+            ],
+            "offset": 0
+          }
+        },        {
+        "biome": "aoemod:soul_sand_valley",
+        "parameters": {
+          "temperature": 0,
+          "humidity": 0,
+          "continentalness": [
+            0.38,
+            1
+          ],
+          "erosion": 0,
+          "weirdness": 0,
+          "depth": [
+            0.08,
+            0.16
+          ],
+          "offset": 0
         }
+      },        {
+        "biome": "aoemod:basalt_delta",
+        "parameters": {
+          "temperature": 0,
+          "humidity": 0,
+          "continentalness": [
+            0.38,
+            1
+          ],
+          "erosion": 0,
+          "weirdness": 0,
+          "depth": [
+            0,
+            0.08
+          ],
+          "offset": 0
+        }
+      }
       ]
+//      [
+//        {
+//          "biome": "aoemod:rainforestnew",
+//          "parameters": {
+//            "temperature": 0,
+//            "humidity": 0,
+//            "continentalness": [
+//              -1,
+//              -0.38
+//            ],
+//            "erosion": 0,
+//            "weirdness": 0,
+//            "depth": [
+//              -400,
+//              400
+//            ],
+//            "offset": 0
+//          }
+//        },
+//        {
+//          "biome": "aoemod:savanna",
+//          "parameters": {
+//            "temperature": 0,
+//            "humidity": 0,
+//            "continentalness": [
+//              -0.38,
+//              -0.1
+//            ],
+//            "erosion": 0,
+//            "weirdness": 0,
+//            "depth": [
+//              -400,
+//              400
+//            ],
+//            "offset": 0
+//          }
+//        },
+//        {
+//          "biome": "aoemod:plains",
+//          "parameters": {
+//            "temperature": 0,
+//            "humidity": 0,
+//            "continentalness": [
+//              -0.1,
+//              0.1
+//            ],
+//            "erosion": 0,
+//            "weirdness": 0,
+//            "depth": [
+//              -400,
+//              400
+//            ],
+//            "offset": 0
+//          }
+//        },
+//        {
+//          "biome": "aoemod:snowy_taiga",
+//          "parameters": {
+//            "temperature": 0,
+//            "humidity": 0,
+//            "continentalness":  [
+//              0.1,
+//              0.38
+//            ],
+//            "erosion": 0,
+//            "weirdness": 0,
+//            "depth": [
+//              -400,
+//              400
+//            ],
+//            "offset": 0
+//          }
+//        },
+//        {
+//          "biome": "aoemod:desert",
+//          "parameters": {
+//            "temperature": 0,
+//            "humidity": 0,
+//            "continentalness": [
+//              0.38,
+//              1
+//            ],
+//            "erosion": 0,
+//            "weirdness": 0,
+//            "depth": [
+//              -400,
+//              85
+//            ],
+//            "offset": 0
+//          }
+//        },
+//        {
+//          "biome": "aoemod:crimson_forest",
+//          "parameters": {
+//            "temperature": 0,
+//            "humidity": 0,
+//            "continentalness": [
+//              0.38,
+//              1
+//            ],
+//            "erosion": 0,
+//            "weirdness": 0,
+//            "depth": [
+//              47,
+//              86
+//            ],
+//            "offset": 0
+//          }
+//        },
+//        {
+//          "biome": "aoemod:warped_forest",
+//          "parameters": {
+//            "temperature": 0,
+//            "humidity": 0,
+//            "continentalness": [
+//              0.38,
+//              1
+//            ],
+//            "erosion": 0,
+//            "weirdness": 0,
+//            "depth": [
+//              17,
+//              46
+//            ],
+//            "offset": 0
+//          }
+//        },
+//        {
+//          "biome": "aoemod:soul_sand_valley",
+//          "parameters": {
+//            "temperature": 0,
+//            "humidity": 0,
+//            "continentalness": [
+//              0.38,
+//              1
+//            ],
+//            "erosion": 0,
+//            "weirdness": 0,
+//            "depth": [
+//              -23,
+//              16
+//            ],
+//            "offset": 0
+//          }
+//        },
+//        {
+//          "biome": "aoemod:basalt_delta",
+//          "parameters": {
+//            "temperature": 0,
+//            "humidity": 0,
+//            "continentalness": [
+//              0.38,
+//              1
+//            ],
+//            "erosion": 0,
+//            "weirdness": 0,
+//            "depth": [
+//              -400,
+//              -24
+//            ],
+//            "offset": 0
+//          }
+//        }
+//      ],
+
     }
   }
 }

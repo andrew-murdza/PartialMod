@@ -1,17 +1,3 @@
 {
-  "block.aoemod.grapes": "Grapes",
-  "block.aoemod.cave_vines": "Cave Vines",
-  "block.aoemod.cave_vines_plant": "Cave Vines Plant",
-  "item.aoemod.glow_berries":"Glow Berries",
-  "item.aoemod.blue_berries":"Blue Berries",
-  "block.aoemod.blue_berry_bush":"Blue Berry Bush",
-  "block.aoemod.sea_pickle":"Sea Pickles",
-  "item.aoemod.sea_pickle":"Sea Pickle",
-//  "biome.aoemod.rainforestnew": "Rainforest",
   "dimension.aoemod.aoedim": "AOE Dimension"
-//  "block.aoemod.wildflower":"Wildflower"//,
-//  "block.aoemod.lavender":"Lavender",
-//  "item.aoemod.wildflower":"Wildflower",
-//  "item.aoemod.lavender":"Lavender",
-//  "item.aoemod.sea_pickle":"Sea Pickle"
 }
