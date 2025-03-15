@@ -152,7 +152,9 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-//    implementation fg.deobf("curse.maven:terrablender-563928:5378180")
+    implementation fg.deobf("curse.maven:terrablender-563928:5378180")
+    implementation fg.deobf("curse.maven:citadelforalexscaves-331936:5633260")
+    implementation fg.deobf("curse.maven:alexs-caves-924854:5633305")
 }
 
 mixin {
