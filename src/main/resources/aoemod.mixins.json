@@ -7,8 +7,8 @@
     "access.WorldGenValuesAccessor",
     "monoxide.ReplaceSpawnDimension",
     "worldgen.BiomeSource",
-    "worldgen.InitializationHandlerMixin",
-    "worldgen.MixinBiomeSource"
+//    "worldgen.InitializationHandlerMixin",
+//    "worldgen.MixinBiomeSource"
   ],
   "minVersion": "0.8.5",
   "client": [

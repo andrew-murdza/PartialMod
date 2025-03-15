@@ -33,27 +33,27 @@ public abstract class BiomeSource {
     }
     @Unique
     private Holder<Biome> september2024PartialMod$getNoiseBiomeHelper(int pX, int pY, int pZ, Climate.Sampler pSampler){
-        boolean flag=new Random().nextInt(1000)==0;
-        if(flag){
-            AOEMod.LOGGER.info("this ran 1");
-        }
+//        boolean flag=new Random().nextInt(200000)==0;
+//        if(flag){
+//            AOEMod.LOGGER.info("this ran 1");
+//        }
         if(parameters.right().isPresent()){
-            if(flag){
-                AOEMod.LOGGER.info("this ran 2");
-            }
             List<Pair<Climate.ParameterPoint, Holder<Biome>>> pairs = ((WorldGenValuesAccessor)parameters.right().get().get().parameters()).getValues();
-            double continentalness=pSampler.continentalness().compute(new DensityFunction.SinglePointContext(pX, pY, pZ));
+            double continentalness=pSampler.continentalness().compute(new DensityFunction.SinglePointContext(pX, pY, pZ))*10000;
             for(Pair<Climate.ParameterPoint, Holder<Biome>> pair:pairs){
                 Climate.ParameterPoint point=pair.getFirst();
-                float maxY=point.depth().max();
-                float minY=point.depth().min();
-                float minCont=point.continentalness().max();
-                float maxCont=point.continentalness().min();
-                float pYfloat= (float) (pY + 64) /384;
+                float maxY=point.temperature().max();
+                float minY=point.temperature().min();
+                float minCont=point.continentalness().min();
+                float maxCont=point.continentalness().max();
+                float pYfloat= (float) (pY + 64) /384*10000;
+//                if(flag){
+//                    AOEMod.LOGGER.info("{} {} {} {} {} {}", pYfloat, maxY, minY, continentalness, minCont, maxCont);
+//                }
                 if(pYfloat >= minY&&pYfloat <= maxY&&continentalness > minCont&&continentalness > maxCont){
-                    if(flag){
-                        AOEMod.LOGGER.info("this ran 3");
-                    }
+//                    if(flag){
+//                        AOEMod.LOGGER.info("this ran 3");
+//                    }
                     return pair.getSecond();
                 }
             }
